@@ -176,6 +176,12 @@ public class Utility {
 	}
 	
 	
+	public void demoMethod()
+	{
+		
+	}
+	
+	
 	public static void highLightElement(WebDriver driver, WebElement element) 
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
