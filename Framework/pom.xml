@@ -53,9 +53,12 @@
 				<configuration>
 					<suiteXmlFiles>
 						<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
+					</suiteXmlFiles>
+
+					<systemPropertyVariables>
 						<Browser>${Browser}</Browser>
 						<AppURL>${AppURL}</AppURL>
-					</suiteXmlFiles>
+					</systemPropertyVariables>
 				</configuration>
 			</plugin>
 		</plugins>
