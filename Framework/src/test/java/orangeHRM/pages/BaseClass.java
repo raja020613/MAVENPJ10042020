@@ -9,6 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -92,14 +93,17 @@ public class BaseClass {
 	}
 	
 	
+	@Parameters({"Browser","AppURL"})
 	@BeforeClass
-	public void setUp()
+	public void setUp(String browser,String appurl)
 	{
 		System.out.println("Log:INFO- Setting up Browser and Application");
 		
 		
-		driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-				DataProviderFactory.getConfig().getValue("QAEnv"));
+	//	driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
+		//		DataProviderFactory.getConfig().getValue("QAEnv"));
+	
+		driver=BrowserFactory.getApplication(browser,appurl);
 		
 		System.out.println("Driver value is "+driver);
 
