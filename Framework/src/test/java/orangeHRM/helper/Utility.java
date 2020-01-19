@@ -60,7 +60,7 @@ public class Utility {
 	
 
 	public static String getScreenshot(WebDriver driver) {
-		String path = System.getProperty("user.dir") + "/Screenshots/Screenshot_" + getCurrentTime() + ".png";
+		String path = System.getProperty("user.dir") + "\\Screenshots\\Screenshot_" + getCurrentTime() + ".png";
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		try {
