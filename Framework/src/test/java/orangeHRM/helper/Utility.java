@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -119,6 +120,42 @@ public class Utility {
 		return element;
 	}
 
+	
+	public static List<WebElement> waitForMultipleWebElement(WebDriver driver, By byLocator) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		
+		List<WebElement> allElements=wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byLocator));
+		
+		return allElements;
+	}
+	
+	
+	public static List<WebElement> waitForMultipleWebElement(WebDriver driver, By byLocator,int time) {
+		
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		
+		List<WebElement> allElements=wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(byLocator));
+		
+		return allElements;
+	}
+	
+	
+	public static void selectValueFromCalendar(List<WebElement> elements,String values) {
+		
+		for(WebElement ele:elements)
+		{
+			String data=ele.getText();
+			if(data.equalsIgnoreCase(values))
+			{
+				ele.click();
+				break;
+			}
+		}	
+	}
+	
+	
+	
 	
 	public static WebElement waitForWebElement(WebDriver driver, By byLocator,int time) {
 		

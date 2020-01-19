@@ -3,6 +3,7 @@ package orangeHRM.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.os.WindowsUtils;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -21,7 +22,7 @@ import orangeHRM.helper.Utility;
 public class BaseClass {
 
 	public WebDriver driver;
-	public ExtentReports report;
+	public static ExtentReports report;
 	public ExtentTest logger;
 	
 	@BeforeSuite
@@ -82,10 +83,8 @@ public class BaseClass {
 		{
 			logger.skip("Test Skipped");
 		}
-		System.out.println("Before Flush "+report);
 
 		report.flush();
-		System.out.println("After Flush "+report);
 	}
 	
 	
@@ -109,7 +108,7 @@ public class BaseClass {
 	{
 		System.out.println("Log:INFO- Terminating browser");
 		
-		BrowserFactory.closeApplication(driver);
+		WindowsUtils.killByName("chrome.exe");
 				
 		System.out.println("Log:INFO- Browser terminated");
 	}

@@ -17,8 +17,6 @@ public class LoginPage {
 	
 	
 	By user=By.id("txtUsername");
-	/*@FindBy(id="txtUsername") 
-	WebElement user;*/
 	By password=By.name("txtPassword");
 	By loginButton=By.xpath("//input[@value='LOGIN']");
 	
