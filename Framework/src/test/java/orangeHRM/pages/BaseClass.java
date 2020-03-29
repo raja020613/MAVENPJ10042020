@@ -117,7 +117,7 @@ public class BaseClass {
 	{
 		System.out.println("Log:INFO- Terminating browser");
 		
-		WindowsUtils.killByName("chrome.exe");
+		driver.quit();
 				
 		System.out.println("Log:INFO- Browser terminated");
 	}
