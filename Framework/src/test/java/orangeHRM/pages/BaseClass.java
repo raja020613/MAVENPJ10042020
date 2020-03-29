@@ -7,6 +7,7 @@ import org.openqa.selenium.os.WindowsUtils;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -111,7 +112,7 @@ public class BaseClass {
 		System.out.println("Log:INFO- Browser and application is ready");
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void tearDown()
 	{
 		System.out.println("Log:INFO- Terminating browser");
