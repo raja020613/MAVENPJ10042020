@@ -94,17 +94,19 @@ public class BaseClass {
 	}
 	
 	
-	@Parameters({"Browser","AppURL"})
+//	@Parameters({"Browser","AppURL"})
 	@BeforeClass
-	public void setUp(String browser,String appurl)
+	public void setUp( /* String browser,String appurl */ )
 	{
 		System.out.println("Log:INFO- Setting up Browser and Application");
 		
 		
-	//	driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-		//		DataProviderFactory.getConfig().getValue("QAEnv"));
-	
-		driver=BrowserFactory.getApplication(browser,appurl);
+		
+		   driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue
+		  ("Browser"), DataProviderFactory.getConfig().getValue("QAEnv"));
+		  
+		 /* driver=BrowserFactory.getApplication(browser,appurl);*/
+		 
 		
 		System.out.println("Driver value is "+driver);
 

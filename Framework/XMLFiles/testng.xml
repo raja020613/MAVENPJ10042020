@@ -4,7 +4,7 @@
   <test name="Test" preserve-order="true" parallel="classes">
     <classes>
        <class name="orangeHRM.testcases.LoginScenarios"/>  
-       <!--  <class name="orangeHRM.testcases.CreateUserFromAdmin"/>     -->   
+        <class name="orangeHRM.testcases.CreateUserFromAdmin"/>       
     </classes>
     
   </test> <!-- Test -->

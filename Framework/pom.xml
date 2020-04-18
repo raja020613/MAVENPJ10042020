@@ -52,14 +52,14 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
+						<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
-					<systemPropertyVariables>
+<!-- 					<systemPropertyVariables>
 						<Browser>${Browser}</Browser>
 						<AppURL>${AppURL}</AppURL>
 					</systemPropertyVariables>
-				</configuration>
+ -->				</configuration>
 			</plugin>
 		</plugins>
 

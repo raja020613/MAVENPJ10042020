@@ -1,121 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="8" passed="6">
+<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25849" started-at="2020-01-19T04:04:42Z" finished-at="2020-01-19T04:05:08Z">
+  <suite name="Suite" duration-ms="55698" started-at="2020-04-10T19:06:49Z" finished-at="2020-04-10T19:07:45Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="25849" started-at="2020-01-19T04:04:42Z" finished-at="2020-01-19T04:05:08Z">
-      <class name="orangeHRM.testcases.LoginScenarios">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="setupReport" is-config="true" duration-ms="262" started-at="2020-01-19T04:04:42Z" finished-at="2020-01-19T04:04:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="setUp" is-config="true" duration-ms="9692" started-at="2020-01-19T04:04:42Z" finished-at="2020-01-19T04:04:52Z">
+    <test name="Test" duration-ms="55698" started-at="2020-04-10T19:06:49Z" finished-at="2020-04-10T19:07:45Z">
+      <class name="orangeHRM.testcases.CreateUserFromAdmin">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="setUp" is-config="true" duration-ms="20153" started-at="2020-04-10T19:06:49Z" finished-at="2020-04-10T19:07:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPage()[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="verifyPage" duration-ms="149" started-at="2020-01-19T04:04:52Z" finished-at="2020-01-19T04:04:52Z">
+        <test-method status="PASS" signature="verifyPage()[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="verifyPage" duration-ms="180" started-at="2020-04-10T19:07:09Z" finished-at="2020-04-10T19:07:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPage -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="tearDownReport" is-config="true" duration-ms="210" started-at="2020-01-19T04:04:52Z" finished-at="2020-01-19T04:04:52Z">
+        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="tearDownReport" is-config="true" duration-ms="2653" started-at="2020-04-10T19:07:09Z" finished-at="2020-04-10T19:07:12Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=LoginScenarios.verifyPage()[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=CreateUserFromAdmin.verifyPage()[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method status="PASS" signature="loginToApplication()[pri:1, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="loginToApplication" duration-ms="7135" started-at="2020-01-19T04:04:52Z" depends-on-methods="orangeHRM.testcases.LoginScenarios.verifyPage" finished-at="2020-01-19T04:04:59Z">
+        <test-method status="PASS" signature="loginToApplication()[pri:1, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="loginToApplication" duration-ms="14340" started-at="2020-04-10T19:07:12Z" depends-on-methods="orangeHRM.testcases.CreateUserFromAdmin.verifyPage" finished-at="2020-04-10T19:07:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="tearDownReport" is-config="true" duration-ms="242" started-at="2020-01-19T04:04:59Z" finished-at="2020-01-19T04:04:59Z">
+        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="tearDownReport" is-config="true" duration-ms="2958" started-at="2020-04-10T19:07:26Z" finished-at="2020-04-10T19:07:29Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginToApplication status=SUCCESS method=LoginScenarios.loginToApplication()[pri:1, instance:orangeHRM.testcases.LoginScenarios@780cb77] output={null}]]]>
+                <![CDATA[[TestResult name=loginToApplication status=SUCCESS method=CreateUserFromAdmin.loginToApplication()[pri:1, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method status="PASS" signature="logoutFromApplication()[pri:2, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="logoutFromApplication" duration-ms="4177" started-at="2020-01-19T04:05:00Z" depends-on-methods="orangeHRM.testcases.LoginScenarios.loginToApplication" finished-at="2020-01-19T04:05:04Z">
+        <test-method status="PASS" signature="logoutFromApplication()[pri:2, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="logoutFromApplication" duration-ms="12989" started-at="2020-04-10T19:07:31Z" depends-on-methods="orangeHRM.testcases.CreateUserFromAdmin.loginToApplication" finished-at="2020-04-10T19:07:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="tearDownReport" is-config="true" duration-ms="172" started-at="2020-01-19T04:05:04Z" finished-at="2020-01-19T04:05:04Z">
+        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="tearDownReport" is-config="true" duration-ms="395" started-at="2020-04-10T19:07:43Z" finished-at="2020-04-10T19:07:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logoutFromApplication status=SUCCESS method=LoginScenarios.logoutFromApplication()[pri:2, instance:orangeHRM.testcases.LoginScenarios@780cb77] output={null}]]]>
+                <![CDATA[[TestResult name=logoutFromApplication status=SUCCESS method=CreateUserFromAdmin.logoutFromApplication()[pri:2, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:orangeHRM.testcases.LoginScenarios@780cb77]" name="tearDown" is-config="true" duration-ms="385" started-at="2020-01-19T04:05:08Z" finished-at="2020-01-19T04:05:08Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@25a65b77]" name="tearDown" is-config="true" duration-ms="815" started-at="2020-04-10T19:07:44Z" finished-at="2020-04-10T19:07:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- orangeHRM.testcases.CreateUserFromAdmin -->
+      <class name="orangeHRM.testcases.LoginScenarios">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="setupReport" is-config="true" duration-ms="151" started-at="2020-04-10T19:06:49Z" finished-at="2020-04-10T19:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="setUp" is-config="true" duration-ms="20153" started-at="2020-04-10T19:06:49Z" finished-at="2020-04-10T19:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPage()[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="verifyPage" duration-ms="179" started-at="2020-04-10T19:07:09Z" finished-at="2020-04-10T19:07:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPage -->
+        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="tearDownReport" is-config="true" duration-ms="2532" started-at="2020-04-10T19:07:09Z" finished-at="2020-04-10T19:07:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=LoginScenarios.verifyPage()[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+        <test-method status="PASS" signature="loginToApplication()[pri:1, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="loginToApplication" duration-ms="17690" started-at="2020-04-10T19:07:12Z" depends-on-methods="orangeHRM.testcases.LoginScenarios.verifyPage" finished-at="2020-04-10T19:07:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApplication -->
+        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="tearDownReport" is-config="true" duration-ms="780" started-at="2020-04-10T19:07:30Z" finished-at="2020-04-10T19:07:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginToApplication status=SUCCESS method=LoginScenarios.loginToApplication()[pri:1, instance:orangeHRM.testcases.LoginScenarios@240237d2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+        <test-method status="PASS" signature="logoutFromApplication()[pri:2, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="logoutFromApplication" duration-ms="5213" started-at="2020-04-10T19:07:31Z" depends-on-methods="orangeHRM.testcases.LoginScenarios.loginToApplication" finished-at="2020-04-10T19:07:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromApplication -->
+        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="tearDownReport" is-config="true" duration-ms="2019" started-at="2020-04-10T19:07:36Z" finished-at="2020-04-10T19:07:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logoutFromApplication status=SUCCESS method=LoginScenarios.logoutFromApplication()[pri:2, instance:orangeHRM.testcases.LoginScenarios@240237d2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:orangeHRM.testcases.LoginScenarios@240237d2]" name="tearDown" is-config="true" duration-ms="1530" started-at="2020-04-10T19:07:38Z" finished-at="2020-04-10T19:07:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- orangeHRM.testcases.LoginScenarios -->
-      <class name="orangeHRM.testcases.CreateUserFromAdmin">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f]" name="setUp" is-config="true" duration-ms="8113" started-at="2020-01-19T04:04:42Z" finished-at="2020-01-19T04:04:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPage()[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f]" name="verifyPage" duration-ms="145" started-at="2020-01-19T04:04:50Z" finished-at="2020-01-19T04:04:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPage -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f]" name="tearDownReport" is-config="true" duration-ms="1521" started-at="2020-01-19T04:04:50Z" finished-at="2020-01-19T04:04:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=CreateUserFromAdmin.verifyPage()[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method status="PASS" signature="loginToApplication()[pri:1, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f]" name="loginToApplication" duration-ms="7708" started-at="2020-01-19T04:04:52Z" depends-on-methods="orangeHRM.testcases.CreateUserFromAdmin.verifyPage" finished-at="2020-01-19T04:05:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f]" name="tearDownReport" is-config="true" duration-ms="222" started-at="2020-01-19T04:05:00Z" finished-at="2020-01-19T04:05:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginToApplication status=SUCCESS method=CreateUserFromAdmin.loginToApplication()[pri:1, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method status="PASS" signature="logoutFromApplication()[pri:2, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f]" name="logoutFromApplication" duration-ms="7717" started-at="2020-01-19T04:05:00Z" depends-on-methods="orangeHRM.testcases.CreateUserFromAdmin.loginToApplication" finished-at="2020-01-19T04:05:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logoutFromApplication -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f]" name="tearDownReport" is-config="true" duration-ms="102" started-at="2020-01-19T04:05:08Z" finished-at="2020-01-19T04:05:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=logoutFromApplication status=SUCCESS method=CreateUserFromAdmin.logoutFromApplication()[pri:2, instance:orangeHRM.testcases.CreateUserFromAdmin@691a7f8f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-      </class> <!-- orangeHRM.testcases.CreateUserFromAdmin -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
